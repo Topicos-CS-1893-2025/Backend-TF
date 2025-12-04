@@ -60,7 +60,7 @@ def solve_puzzle(board: BoardState):
 @app.get("/random/{size}")
 def get_random_puzzle(size: int):
     """Genera un puzzle aleatorio del tamaño solicitado."""
-    if size < 2 or size > 9:
+    if size < 2 or size > 101:
         raise HTTPException(status_code=400, detail="Tamaño debe ser entre 2 y 9")
     
     cages = generate_puzzle(size)
