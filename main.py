@@ -15,7 +15,7 @@ app = FastAPI()
 origins = [
     "http://localhost:4200", # Tu Angular
     "http://127.0.0.1:4200",
-    "https://kenken-frontend-tf.netlify.app"
+    "https://kenken-frontend-tf.netlify.app",
     "https://www.kenken-frontend-tf.netlify.app"
 ]
 
